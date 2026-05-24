@@ -1,0 +1,16 @@
+stories:
+
+- story: leave policy flow
+  steps:
+    - intent: leave_policy
+    - action: utter_leave_policy
+
+- story: greeting flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: leave balance flow
+  steps:
+    - intent: leave_balance
+    - action: action_check_leave_balance

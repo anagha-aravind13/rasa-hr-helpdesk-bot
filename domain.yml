@@ -1,0 +1,24 @@
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - leave_policy
+  - leave_balance
+  - apply_leave
+
+responses:
+
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_leave_policy:
+    - text: "Employees receive 12 casual leaves annually."
+
+  utter_goodbye:
+    - text: "Goodbye!"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_check_leave_balance
