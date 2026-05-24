@@ -7,12 +7,28 @@ nlu:
     - hello
     - hi
     - hey
+    - hey bot
+    - good morning
+    - good evening
+    - hello there
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - are you a chatbot
+    - can you help me
+    - are you human
 
 - intent: leave_policy
   examples: |
     - what is leave policy
     - how many leaves do I get
     - tell me leave rules
+    - can you explain the leave policy
+    - what are the leave policy details
+    - what is my leave entitlement
+    - how do I use my leave
+    - tell me the leave policy
 
 - intent: leave_balance
   examples: |
@@ -25,7 +41,67 @@ nlu:
     - apply leave for Monday
     - I need sick leave
 
+- intent: faq_query
+  examples: |
+    - what is the travel reimbursement policy
+    - how do I update my bank details
+    - where can I find the employee handbook
+    - what is the maternity leave policy
+    - how do I request a salary slip
+    - whom do I contact for HR support
+    - what is the leave policy
+    - explain the WFH policy
+    - how can I update my bank information
+    - where is the employee handbook
+    - what is the onboarding process
+
+- intent: work_from_home_policy
+  examples: |
+    - can I work from home
+    - what is the WFH policy
+    - how many WFH days are allowed
+    - explain remote work policy
+    - what is our remote work policy
+
+- intent: payroll_query
+  examples: |
+    - when will salary be credited
+    - payroll date
+    - when do we get salary
+    - what is payroll processed
+    - when is payroll processed
+
+- intent: office_timings
+  examples: |
+    - office timings
+    - working hours
+    - what are company timings
+    - what are the office hours
+
+- intent: holiday_list
+  examples: |
+    - upcoming holidays
+    - company holidays
+    - holiday calendar
+    - what holidays are coming up
+
+- intent: password_reset
+  examples: |
+    - reset my password
+    - forgot password
+    - cannot login
+    - I need password help
+
+- intent: id_card_request
+  examples: |
+    - I lost my ID card
+    - need new ID card
+    - replace employee badge
+    - request a new ID card
+
 - intent: goodbye
   examples: |
     - bye
     - goodbye
+    - see you
+    - talk later

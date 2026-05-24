@@ -1,0 +1,11 @@
+rasa==3.6.20
+rasa-sdk==3.6.2
+sqlalchemy==1.4.54
+psycopg2-binary==2.9.12
+python-dotenv==1.2.2
+requests==2.34.2
+streamlit==1.57.0
+pandas==2.3.3
+python-multipart==0.0.29
+sanic==21.12.2
+websockets==10.4

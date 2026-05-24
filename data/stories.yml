@@ -1,3 +1,5 @@
+version: "3.1"
+
 stories:
 
 - story: leave policy flow
@@ -14,3 +16,48 @@ stories:
   steps:
     - intent: leave_balance
     - action: action_check_leave_balance
+
+- story: apply leave flow
+  steps:
+    - intent: apply_leave
+    - action: utter_apply_leave
+
+- story: FAQ query flow
+  steps:
+    - intent: faq_query
+    - action: action_faq_lookup
+
+- story: work from home policy
+  steps:
+    - intent: work_from_home_policy
+    - action: utter_work_from_home_policy
+
+- story: payroll query flow
+  steps:
+    - intent: payroll_query
+    - action: utter_payroll_query
+
+- story: office timings flow
+  steps:
+    - intent: office_timings
+    - action: utter_office_timings
+
+- story: holiday list flow
+  steps:
+    - intent: holiday_list
+    - action: utter_holiday_list
+
+- story: password reset flow
+  steps:
+    - intent: password_reset
+    - action: utter_password_reset
+
+- story: id card request flow
+  steps:
+    - intent: id_card_request
+    - action: utter_id_card_request
+
+- story: goodbye flow
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

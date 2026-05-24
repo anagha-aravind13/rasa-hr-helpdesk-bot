@@ -1,3 +1,5 @@
+version: "3.1"
+
 intents:
   - greet
   - goodbye
@@ -5,14 +7,41 @@ intents:
   - leave_policy
   - leave_balance
   - apply_leave
+  - faq_query
+  - work_from_home_policy
+  - payroll_query
+  - office_timings
+  - holiday_list
+  - password_reset
+  - id_card_request
 
 responses:
-
   utter_greet:
     - text: "Hello! How can I help you today?"
 
   utter_leave_policy:
     - text: "Employees receive 12 casual leaves annually."
+
+  utter_apply_leave:
+    - text: "Sure, I can help you apply for leave. What dates do you need?"
+
+  utter_work_from_home_policy:
+    - text: "Employees can work remotely up to 2 days per week with manager approval."
+
+  utter_payroll_query:
+    - text: "Payroll is processed on the last working day of each month."
+
+  utter_office_timings:
+    - text: "Standard office hours are 9:00 AM to 6:00 PM Monday through Friday."
+
+  utter_holiday_list:
+    - text: "The upcoming company holidays are Independence Day and Onam."
+
+  utter_password_reset:
+    - text: "You can reset your password using the internal self-service portal or contact IT support."
+
+  utter_id_card_request:
+    - text: "Please raise an admin request through the HR portal for ID card replacement."
 
   utter_goodbye:
     - text: "Goodbye!"
@@ -20,5 +49,13 @@ responses:
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
+  utter_fallback:
+    - text: "I'm sorry, I didn't understand that. Could you rephrase your question?"
+
 actions:
   - action_check_leave_balance
+  - action_faq_lookup
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
